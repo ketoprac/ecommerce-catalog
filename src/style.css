@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --blue: #002772;
+  --purple: #720060;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.men {
+  color: var(--blue);
+}
+
+.women {
+  color: var(--purple);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+  transform: scale(1);
+}
+
+.wrapper.men {
+  background-image: url("/bg-pattern-men.png"); /* Set the URL of the image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+}
+
+.wrapper.women {
+  background-image: url("/bg-pattern-women.png"); /* Set the URL of the image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+}
+
+.wrapper.invalid {
+  background-image: url("/bg-invalid.png"); /* Set the URL of the image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+}
+
+.container {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 68px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 80%;
+  margin: auto;
+  border-radius: 8px;
+  min-height: 580px;
+  width: 1034px;
+  padding: 54px;
+  transform: scale(0.95);
+}
+
+.loading {
+  color: lightgray;
+  font-weight: 200;
+}
+
+.container__image {
+  padding: 16px;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 11px;
+  font-size: 22px;
+  color: #3f3f3f;
+}
+
+.category.men {
+  color: var(--blue);
+}
+
+.category.women {
+  color: var(--purple);
+}
+
+img {
+  max-height: 400px;
+  max-width: 300px;
+}
+
+button {
+  padding: 4px 0;
+  cursor: pointer;
+  height: 42px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.primary {
+  border: none;
+  color: white;
+}
+
+.primary.women {
+  background: var(--purple);
+}
+
+.primary.men {
+  background: var(--blue);
+}
+
+.secondary {
+  background: #fff;
+}
+
+.secondary.men {
+  border: 3px solid var(--blue);
+  color: var(--blue);
+}
+
+.secondary.women {
+  border: 3px solid var(--purple);
+  color: var(--purple);
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.description {
+  margin-top: 26px;
+  margin-bottom: 62.5px;
+  font-size: 20px;
+  color: #1e1e1e;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 16px 0;
+}
+
+.container__button {
+  display: flex;
+  gap: 19px;
+}
+
+.category__title {
+  color: #3f3f3f;
+}
+
+.invalid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/sad-face.png"); /* Set the URL of the image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  text-align: center; /* Center align text within the container */
+}
+
+.invalid p {
+  font-size: 20px;
+}
+
+.invalid > .secondary {
+  margin-top: -60px;
+  width: 50%;
+  border: 3px solid;
+}
+
+.invalid img {
+  position: absolute;
+  height: 100%;
+  width: 1028px;
+}
